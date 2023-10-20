@@ -1,2 +1,2 @@
 # Prime CMS
-Commercial Content Management System I coded in vanilla PHP in 2006.
+Commercial CMS I coded in vanilla PHP in 2006.
