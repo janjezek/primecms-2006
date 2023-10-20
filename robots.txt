@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /cl_preview.php
+Disallow: /admin/
+Disallow: /archiv/
+Disallow: /include/

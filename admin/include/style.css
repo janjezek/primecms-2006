@@ -1,0 +1,250 @@
+/* --- layout --- */
+
+#telo {
+  text-align: center;
+}
+
+#main {
+  width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#hlavicka {
+  width: 100%;
+  text-align: center;
+}
+
+#hlavicka .layout_1 {
+  padding: 10px 0px 10px 0px;
+}
+
+#vpravo {
+  width: 550px;
+  float: right;
+}
+
+#vpravo .layout_1 {
+  padding: 10px 0px 0px 0px;
+}
+
+#vlevo {
+  width: 150px;
+  float: left;
+}
+
+#vlevo .layout_1 {
+  padding: 10px 5px 0px 0px;
+}
+
+#paticka {
+  clear: both;
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#paticka .layout_1 {
+  padding: 10px 0px 0px 0px;
+}
+
+hr {
+  display: none;
+}
+
+#paticka #link {
+  border-top: 1px solid #98a3a6;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#vpravo,
+#vlevo {
+  font-size: 0.8em;
+  color: #444;
+}
+
+/* --- hlavièka --- */
+
+#hlavicka .user_panel {
+  text-align: right;
+  font-size: 0.8em;
+  padding: 4px 4px 4px;
+  margin-bottom: 0;
+  border-style: none none solid none;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-color: #98a3a6;
+  vertical-align: top;
+}
+
+/* --- tìlo --- */
+
+body {
+  font-size: 100%;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+/* --- bloky --- */
+
+#vlevo h2 {
+  font-size: 1em;
+  color: #98a3a6;
+  padding: 0px;
+  padding-left: 5px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #98a3a6;
+}
+
+#vlevo p {
+  padding-left: 10px;
+}
+
+/* --- formuláøe --- */
+
+#vpravo #table_form {
+  width: 100%;
+}
+
+#vpravo #table_form td {
+  padding: 3px;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+input,
+textarea,
+select {
+  color: #000000;
+  font: 12px arial;
+  margin: 2px;
+}
+
+/* --- èlánky --- */
+
+.c_odk {
+  font-family: arial;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.c_min {
+  font: 11px arial;
+  color: #000;
+  margin-top: 2px;
+  padding-top: 0px;
+  text-align: right;
+  border-top: 1px solid black;
+}
+
+.c_per {
+  padding: 7px 0px 17px 0px;
+}
+
+.c_nadp {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* --- nadpisy --- */
+
+h1 {
+  font: 1.3em arial;
+  font-weight: bold;
+  color: #98a3a6;
+}
+
+#center h2 {
+  font: 1.3em arial;
+  font-weight: bold;
+  color: #98a3a6;
+}
+
+/* --- odkazy --- */
+
+a {
+  color: #444;
+}
+
+a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+/* --- ostatní --- */
+
+img {
+  border: none;
+}
+
+table,
+td {
+  font: 12px arial;
+  vertical-align: top;
+}
+
+/* --- administrace --- */
+
+.vp_table {
+  border-collapse: collapse;
+}
+
+.vp_table td {
+  padding: 5px 0 5px 0;
+}
+
+.vp_cell1_cl {
+  width: 350px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #98a3a6;
+  border-bottom: 1px solid #98a3a6;
+}
+
+.vp_cell1 {
+  width: 400px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #98a3a6;
+  border-bottom: 1px solid #98a3a6;
+}
+
+.vp_cell2 {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #98a3a6;
+  border-bottom: 1px solid #98a3a6;
+}
+
+.listovani {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.alert {
+  color: #00cc00;
+  padding-top: 5px;
+  height: 22px;
+  padding-left: 25px;
+  background: url(../icons/success.gif) no-repeat left;
+}
+
+.alert2 {
+  color: #cc0000;
+  padding-top: 5px;
+  height: 22px;
+  padding-left: 25px;
+  background: url(../icons/error.gif) no-repeat left;
+}
+
+.layout_2 {
+  width: 100%;
+}

@@ -1,0 +1,209 @@
+/* --- layout --- */
+
+body {
+  min-width: 766px;
+  background: #fff;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  color: #444;
+  margin: 15px 0px 7px 12px;
+  padding: 0;
+}
+
+#page {
+  width: 766px;
+  margin: 0;
+}
+
+#header {
+  width: 760px;
+  color: inherit;
+}
+
+#header .layout_1 {
+  padding: 0;
+}
+
+#left {
+  width: 170px;
+  float: left;
+  margin: 5px 10px 5px 0;
+}
+
+#right {
+  width: 170px;
+  float: left;
+  margin: 5px 0 5px 10px;
+}
+
+#left,
+#right,
+#main,
+#footer {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+#main {
+  width: 400px;
+  float: left;
+  border-top: 5px solid #fff;
+}
+
+#main .layout_1 {
+  padding: 12px 10px 12px 10px;
+}
+
+#footer {
+  width: 760px;
+  padding: 10px;
+  margin-top: 10px;
+
+  clear: both;
+  font-size: 0.8em;
+}
+
+.layout_2 {
+  width: 100%;
+}
+
+/* --- hlavièka --- */
+
+#top {
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* --- drobnosti --- */
+
+table,
+input,
+select,
+textarea {
+  font: 100% Arial, sans-serif;
+}
+
+p,
+form {
+  margin: 0;
+}
+
+#list {
+  margin-top: 1em;
+  clear: both;
+  text-align: right;
+}
+
+#list a {
+}
+
+.al_right {
+  text-align: right;
+}
+
+.al_left {
+  text-align: left;
+}
+
+/* --- odkazy --- */
+
+a:link,
+a:active {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+}
+
+/* --- sloupce --- */
+
+#left h2,
+#right h2 {
+  font-size: 100%;
+
+  margin: 0.8em 0 0 0;
+  padding: 0.2em 0.2em 0.2em 0.7em;
+}
+
+#left h3,
+#right h3 {
+  font-size: 110%;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+/* --- boxy --- */
+
+.box {
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+/* --- seznam èlánkù --- */
+
+#main h2 {
+  font-size: 140%;
+}
+
+#main h3 {
+  clear: both;
+  margin: 1em 0 0.4em 0;
+  font-size: 130%;
+}
+
+.rubrika {
+  margin: 0em 0 0.4em 0;
+}
+
+.info {
+  float: left;
+  padding: 0 1em 0 0;
+}
+
+.info a:link,
+.info a:visited {
+}
+
+.rubrika,
+.rubrika a:link,
+.rubrika a:visited {
+}
+
+/* --- rubriky --- */
+
+.menu {
+  line-height: 1.6em;
+}
+
+.menu,
+.menu a:link,
+.menu a:visited {
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* --- zobrazení èlánku --- */
+
+#clanek p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#clanek h2 {
+  font-size: 140%;
+}
+
+#clanek h3 {
+  font-size: 130%;
+}
+
+h4 {
+  padding: 0 0 0 10px;
+}
