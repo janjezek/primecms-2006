@@ -1,4 +1,4 @@
-<?php
+<?php 
 $akt_rok = date("Y");
 if ($akt_rok != $start_year) {
   $bt_dt = "$start_year - $akt_rok";
