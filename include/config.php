@@ -4,7 +4,7 @@
 $dbname     = "primecms";           // jméno databáze
 $dbserver   = "localhost";            // adresa serveru
 $dbuser     = "root";                     // uživatel databáze
-$dbpass     = "Bcn.lover9";                     // heslo
+$dbpass     = "";                     // heslo
 
 /* --- listování --- */
 

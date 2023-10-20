@@ -1,13 +1,13 @@
 <?php
 include "include/header.php";
 
-/* --- listovï¿½nï¿½ ï¿½lï¿½nkï¿½ --- */
+/* --- listov˜n˜ ˜l˜nk˜ --- */
 
 if (isset($_GET["id"])) {
 $vyh = $_GET["id"];
 
-cr_head($sitename, "Vyhledï¿½vï¿½nï¿½ vï¿½razu \"$vyh\"");
-echo "<h2>Vyhledï¿½vï¿½nï¿½ vï¿½razu \"$vyh\"</h2>";
+cr_head($sitename, "Vyhled˜v˜n˜ v˜razu \"$vyh\"");
+echo "<h2>Vyhled˜v˜n˜ v˜razu \"$vyh\"</h2>";
 
 $cas = time();
 
@@ -22,17 +22,17 @@ if (!isset($_GET["list"])) {
 
 $vysledek_celk = mysqli_query($db,"select id from clanky where nadpis like '%$vyh%' and stav = 'v' and datum <= $cas and zobrazeni != '3'");
 
-/* --- vybrï¿½nï¿½ ï¿½lï¿½nkï¿½ z databï¿½ze --- */
+/* --- vybr˜n˜ ˜l˜nk˜ z datab˜ze --- */
 
 $vysledek = mysqli_query($db,"select c.id,c.nadpis,c.perex,r.id,r.rubrika,a.id,a.jmeno,c.datum,c.komentare,c.forma from clanky c, rubriky r, autori a where c.nadpis like '%$vyh%' and c.id_rubrika = r.id and c.id_autor = a.id and c.stav = 'v' and datum <= $cas and c.zobrazeni != '3' order by c.datum desc limit $zaznam, $pocet");
 $control = mysqli_num_rows($vysledek);
 
 if ($control == "0") {
   if (!isset($_GET["list"])) {
-    echo "<p style=\"text-align: center\">Hledanï¿½mu vï¿½razu neodpovï¿½dajï¿½ ï¿½ï¿½dnï¿½ ï¿½lï¿½nky!</p>";
+    echo "<p style=\"text-align: center\">Hledan˜mu v˜razu neodpov˜daj˜ ˜˜dn˜ ˜l˜nky!</p>";
   } else {
-    echo "<h2>Neoï¿½ekï¿½vanï¿½ chyba</h2>\n";
-    echo "<p>Neexistujï¿½cï¿½ parametr LIST. Bez sprï¿½vnï¿½ho parametru nenï¿½ mo?nï¿½ zobrazit ï¿½lï¿½nky.<br/>Prosï¿½m pokraï¿½ujte na <a href=\"index.php\">titulnï¿½ strï¿½nku</a>.\n";
+    echo "<h2>Neo˜ek˜van˜ chyba</h2>\n";
+    echo "<p>Neexistuj˜c˜ parametr LIST. Bez spr˜vn˜ho parametru nen˜ mo?n˜ zobrazit ˜l˜nky.<br/>Pros˜m pokra˜ujte na <a href=\"index.php\">tituln˜ str˜nku</a>.\n";
   }
 } else {
   while ($row = mysqli_fetch_row($vysledek)) {
@@ -51,11 +51,11 @@ if ($control == "0") {
     $comx = mysqli_num_rows($vysledek2);
 
     if ($comx == "1") {
-      $hl_cm = "komentï¿½ï¿½";
+      $hl_cm = "koment˜˜";
     } elseif ($comx >= "5" or $comx == "0") {
-      $hl_cm = "komentï¿½ï¿½ï¿½";
+      $hl_cm = "koment˜˜˜";
     } else {
-      $hl_cm = "komentï¿½ï¿½e";
+      $hl_cm = "koment˜˜e";
     }
 
     $comx2 = "$comx $hl_cm";

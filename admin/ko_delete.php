@@ -1,4 +1,4 @@
-<?php
+s<?php
 include "include/header.php";
 
 echo "<h1>Administrace &gt; Smazání komentáøe</h1>\n";

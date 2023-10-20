@@ -1,6 +1,6 @@
 <?php
 
-/* --- zjistï¿½ poï¿½et listï¿½ --- */
+/* --- zjist˜ po˜et list˜ --- */
 
 $pocet_listu = mysqli_num_rows($vysledek_celk)/$pocet;
 $pocet_vysl = ceil($pocet_listu);
@@ -12,7 +12,7 @@ for ($i = 2; $i <= $pocet_vysl; $i++):
   $pole[$i] = $zaznam;
 endfor;
 
-/* --- listï¿½ je vï¿½c neï¿½ jeden --- */
+/* --- list˜ je v˜c ne˜ jeden --- */
 
 while (list($cislo_listu, $x) = each($pole)):
 
@@ -26,9 +26,9 @@ while (list($cislo_listu, $x) = each($pole)):
   break;
   endif;
 
-/* --- obsluhuje jednotlivï¿½ situace --- */
+/* --- obsluhuje jednotliv˜ situace --- */
 
-  echo "<p id=\"list\">Listovï¿½nï¿½ :\n";
+  echo "<p id=\"list\">Listov˜n˜ :\n";
 
   if(($pocet_vysl == 2)&&($list == 1)):
     echo " $list / $pocet_vysl ";
